@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+
+
+
+<body>
+<h1> Latest News </h1>
+
+
+
+{% if latest_news_story %}
+{% for story in latest_news_story %}
+<h2> {{ story.news_heading }} </h2>
+<h4> {{ story.pub_date }} </h4>
+<p> {{ story.news_story }} </p>
+{% endfor %}
+{% endif %}
+
+
+
+</body>
+</html>
